@@ -5,13 +5,17 @@
 }
 
 @include media-breakpoint-up(lg) {
-  .rounded-lg-#{$i} {
-    border-radius: #{$i}px !important;
+  @for $i from 0 through 30 {
+    .rounded-lg-#{$i} {
+      border-radius: #{$i}px !important;
+    }
   }
 }
 
 @include media-breakpoint-up(xl) {
-  .rounded-xl-#{$i} {
-    border-radius: #{$i}px !important;
+  @for $i from 0 through 30 {
+    .rounded-xl-#{$i} {
+      border-radius: #{$i}px !important;
+    }
   }
 }
