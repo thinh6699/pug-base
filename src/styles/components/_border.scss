@@ -1,0 +1,81 @@
+@for $i from 0 through 15 {
+  .border-#{$i} {
+    border-width: #{$i}px !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  @for $i from 0 through 15 {
+    .border-lg-#{$i} {
+      border-width: #{$i}px;
+    }
+  }
+
+  .border-lg-none {
+    border: none !important;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  @for $i from 0 through 15 {
+    .border-xl-#{$i} {
+      border-width: #{$i}px;
+    }
+  }
+
+  .border-xl-none {
+    border: none !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .border-top-lg {
+    border-top: 1px solid $border-color;
+  }
+
+  .border-start-lg {
+    border-left: 1px solid $border-color;
+  }
+
+  .border-end-lg {
+    border-right: 1px solid $border-color;
+  }
+
+  .border-bottom-lg {
+    border-bottom: 1px solid $border-color;
+  }
+
+  .border-start-lg-none {
+    border-left: none !important;
+  }
+
+  .border-end-lg-none {
+    border-right: none !important;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .border-top-xl {
+    border-top: 1px solid $border-color;
+  }
+
+  .border-start-xl {
+    border-left: 1px solid $border-color;
+  }
+
+  .border-end-xl {
+    border-right: 1px solid $border-color;
+  }
+
+  .border-bottom-xl {
+    border-bottom: 1px solid $border-color;
+  }
+
+  .border-start-xl-none {
+    border-left: none !important;
+  }
+
+  .border-end-xl-none {
+    border-right: none !important;
+  }
+}

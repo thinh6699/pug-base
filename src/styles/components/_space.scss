@@ -1,0 +1,173 @@
+@for $i from 0 through 200 {
+  .w--#{$i} {
+    width: $i * 4px;
+  }
+
+  .w---#{$i} {
+    width: #{$i}px;
+  }
+
+  .w-100-n---#{$i} {
+    width: calc(100% - #{$i}px);
+  }
+}
+
+@for $i from 1 through 100 {
+  .w-p-#{$i} {
+    width: #{$i}#{'%'};
+  }
+
+  .h-p-#{$i} {
+    height: #{$i}#{'%'};
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  @for $i from 0 through 200 {
+    .w-lg--#{$i} {
+      width: $i * 4px;
+    }
+  }
+
+  .w-lg-auto {
+    width: auto !important;
+  }
+
+  .w-lg-unset {
+    width: unset !important;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  @for $i from 0 through 200 {
+    .w-xl--#{$i} {
+      width: $i * 4px;
+    }
+  }
+
+  .w-xl-auto {
+    width: auto !important;
+  }
+
+  .w-xl-unset {
+    width: unset !important;
+  }
+}
+
+@for $i from 0 through 200 {
+  .h--#{$i} {
+    height: $i * 4px;
+  }
+
+  .h---#{$i} {
+    height: #{$i}px;
+  }
+
+  .h-100-n---#{$i} {
+    height: calc(100% - #{$i}px);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  @for $i from 0 through 100 {
+    .h-lg--#{$i} {
+      height: $i * 4px;
+    }
+  }
+
+  .h-lg-auto {
+    height: auto !important;
+  }
+
+  .h-lg-unset {
+    height: unset !important;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  @for $i from 0 through 100 {
+    .h-xl--#{$i} {
+      height: $i * 4px;
+    }
+  }
+
+  .h-xl-auto {
+    height: auto !important;
+  }
+
+  .h-xl-unset {
+    height: unset !important;
+  }
+}
+
+@for $i from 0 through 200 {
+  .mw--#{$i} {
+    max-width: $i * 4px;
+  }
+
+  .maxh--#{$i} {
+    max-height: $i * 4px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  @for $i from 0 through 200 {
+    .mw-lg--#{$i} {
+      max-width: $i * 4px;
+    }
+  }
+
+  .mw-lg-auto {
+    max-width: auto !important;
+  }
+}
+
+@for $i from 0 through 200 {
+  .minw--#{$i} {
+    min-width: $i * 4px;
+  }
+
+  .minh--#{$i} {
+    min-height: $i * 4px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  @for $i from 0 through 100 {
+    .minw-lg--#{$i} {
+      min-width: $i * 4px;
+    }
+  }
+
+  .minw-lg-auto {
+    min-width: auto !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  @for $i from 0 through 100 {
+    .minh-lg--#{$i} {
+      min-height: $i * 4px;
+    }
+  }
+
+  .minh-lg-auto {
+    min-height: auto !important;
+  }
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-unset {
+  width: unset !important;
+}
+
+.h-unset {
+  height: unset !important;
+}
+
+.minw-unset {
+  min-width: unset !important;
+}

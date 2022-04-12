@@ -1,0 +1,11 @@
+@for $i from 1 through 10 {
+  .z-#{$i} {
+    z-index: $i;
+  }
+}
+
+@for $i from 100 through 120 {
+  .z-#{$i}0 {
+    z-index: $i * 10;
+  }
+}

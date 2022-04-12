@@ -1,0 +1,35 @@
+@include media-breakpoint-up(lg) {
+  .position-lg-relative {
+    position: relative !important;
+  }
+
+  .position-lg-absolute {
+    position: absolute !important;
+  }
+
+  .position-lg-fixed {
+    position: fixed !important;
+  }
+
+  .position-lg-initial {
+    position: initial !important;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .position-xl-relative {
+    position: relative !important;
+  }
+
+  .position-xl-absolute {
+    position: absolute !important;
+  }
+
+  .position-xl-fixed {
+    position: fixed !important;
+  }
+
+  .position-xl-initial {
+    position: initial !important;
+  }
+}

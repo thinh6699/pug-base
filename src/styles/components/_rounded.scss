@@ -1,0 +1,17 @@
+@for $i from 0 through 30 {
+  .rounded-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .rounded-lg-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .rounded-xl-#{$i} {
+    border-radius: #{$i}px !important;
+  }
+}

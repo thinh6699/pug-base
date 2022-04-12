@@ -1,15 +1,29 @@
 // helpers
 @import 'helpers/variables';
 @import 'helpers/mixins';
-@import 'helpers/reset';
+@import 'helpers/common';
 
 // vendors
+@import 'custom-bootstrap/border';
+@import 'custom-bootstrap/button';
+@import 'custom-bootstrap/input';
+@import 'custom-bootstrap/spacer';
+@import 'custom-bootstrap/theme-colors';
 @import 'node_modules/bootstrap/scss/bootstrap.scss';
 @import 'vendors/fontawesome/fontawesome';
-// @import 'node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
 
 // components
 @import 'components/button';
+@import 'components/space';
+@import 'components/text';
+@import 'components/position';
+@import 'components/rounded';
+@import 'components/input';
+@import 'components/z-index';
+@import 'components/color';
+@import 'components/border';
+@import 'components/scrollbar';
+@import 'components/flex';
 
 // blocks
 @import 'blocks/header';
